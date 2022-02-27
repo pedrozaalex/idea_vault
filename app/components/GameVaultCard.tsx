@@ -7,7 +7,7 @@ interface GameVaultCardProps {
 
 const GameVaultCard = ({ title, description }: GameVaultCardProps) => {
   return (
-    <div className="card bg-base-100 shadow-xl">
+    <div className="card bg-base-300 shadow-xl">
       <div className="card-body p-4">
         <h3 className="card-title">{title}</h3>
         <p>{description}</p>

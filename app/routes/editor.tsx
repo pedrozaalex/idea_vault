@@ -1,7 +1,7 @@
-import {Outlet} from 'remix';
+import { Outlet } from 'remix';
 import Sidebar from '~/components/Sidebar';
-import GameVaultCard from "~/components/GameVaultCard";
-import React from "react";
+import GameVaultCard from '~/components/GameVaultCard';
+import React from 'react';
 
 const testVaults = new Array(10).fill({
   title: 'Test Vault',
@@ -11,7 +11,7 @@ const testVaults = new Array(10).fill({
 export default function Index() {
   return (
     <>
-      <Sidebar title='Your game vaults'>
+      <Sidebar title="Your game vaults">
         <div className="grow overflow-y-auto">
           <ul className="flex flex-col mr-2 space-y-2">
             {testVaults.map((vault, index) => (
@@ -20,7 +20,7 @@ export default function Index() {
           </ul>
         </div>
       </Sidebar>
-      <Outlet/>
+      <Outlet />
     </>
   );
 }
